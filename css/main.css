@@ -1,0 +1,241 @@
+/*** web fonts ***/
+@import url(https://fonts.googleapis.com/css?family=Lato:400);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif:400);
+@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah:400);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/*** basic reset ***/
+
+body, h1, h2, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+/*starry night*/
+/*background-color:black;
+background-image:
+radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;*/
+
+* {
+    box-sizing: border-box;
+}
+
+.menu {
+    width: 25%;
+    float: left;
+}
+.main {
+    width: 75%;
+    float: left;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color :#33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+    background-color: #0099cc;
+}
+
+/*@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+}*/
+
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      width: 80%
+      height: auto;
+    }
+
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 1.5em;
+    }
+
+    /*nav a {
+      text-decoration: none;
+      color: black;
+      border-radius: 4px;
+      padding: 10px;
+    }*/
+}
+
+
+/*body {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 1em;
+  margin: 20px auto 0;
+}*/
+  /*this means 20 px to top, auto the sides, then 0 to /bottom*/
+  /* margin 0 auto alone doesnt do anything, need to set a width */
+
+
+/*header h1 {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 2em;
+}*/
+
+/*header img {
+  height: 8.5em;
+}*/
+
+
+
+/*@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+  }
+}*/
+
+/*.icons img {
+  height: 6em;
+  margin-bottom: 1em;
+}*/
+
+/*.icons {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 8em;
+}*/
+
+
+/*a.first-anchor {
+  background-color: red;
+  color: white;
+}*/
+
+/*a:hover {
+  background: blue;
+  color: white;
+}*/
+
+/*li {
+  list-style-type: none;
+}*/
+
+/*div h1 {
+  font-size: 6em;
+  color: black;
+  font-family: 'Bree Serif', serif;
+}*/
+
+/*#feature {
+  margin: 2em auto;
+  height: 14em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
+radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px),
+#8a3;
+background-size: 20px 20px;
+}*/
+
+/*.html, .css, .js {
+  width: 22em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}*/
+
+
+div .image {
+    width: 100%;
+    height: 400px;
+    background-image: url('img_flowers.jpg');
+    background-size: cover;
+    border: 1px solid red;
+}
