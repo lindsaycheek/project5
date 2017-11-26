@@ -24,13 +24,21 @@ background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;*/
     box-sizing: border-box;
 }
 
+body {
+  margin: 0 auto;
+}
+
+main {
+  width: 90%;
+}
+
 .menu {
     width: 25%;
     float: left;
 }
 .main {
     width: 75%;
-    float: left;
+    /*float: left;*/
 }
 
 .col-1 {width: 8.33%;}
