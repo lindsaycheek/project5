@@ -24,6 +24,15 @@ background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;*/
     box-sizing: border-box;
 }
 
+body {
+  background-color: black;
+  background-image: radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -70,7 +79,7 @@ nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 1.5em;
+  margin-top: 1em;
 }
 
 .menu ul {
@@ -149,8 +158,21 @@ nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 1.5em;
+    margin-top: 1em;
   }
+}
+
+#feature {
+  margin: 2em auto;
+  height: 14em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
+radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px),
+#8a3;
+background-size: 20px 20px;
 }
 
 .photo-row-1 {
@@ -165,6 +187,7 @@ nav ul {
   display: flex;
   flex-direction: column;
 }
+
 
 
 /* For mobile phones: */
@@ -202,100 +225,100 @@ nav ul {
     .photo-col-11 {width: 91.66%;}
     .photo-col-12 {width: 100%;}
 
-  .photo-col-1, .photo-col-2, .photo-col-3, .photo-col-4, .photo-col-5, .photo-col-6, .photo-col-7, .photo-col-8, .photo-col-9, .photo-col-10, .photo-col-11, .photo-col-12 {
-    width: 24vw;
-    height: auto;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    .photo-col-1, .photo-col-2, .photo-col-3, .photo-col-4, .photo-col-5, .photo-col-6, .photo-col-7, .photo-col-8, .photo-col-9, .photo-col-10, .photo-col-11, .photo-col-12 {
+      width: 24vw;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-  [class*="photo-col-"] {
-      height: 400px;
-      border: 1px solid red;
-  }
+    [class*="photo-col-"] {
+        height: 800px;
+        margin: 2em;
+        border: 1px solid white;
+    }
 
-  .photo-collage {
-    margin: 2em auto;
-    border: 10px solid red;
-    height: 100em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: space-between;
-    /*align-items: center;*/
-  }
+    .photo-collage {
+      margin: 2em auto;
+      border: 10px solid red;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      justify-content: space-between;
+      background-size: cover;
+      /*align-items: center;*/
+    }
 
-  .photo-row-1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .photo-row-2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .photo-row-3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+    .photo-row-1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .photo-row-2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .photo-row-3 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
-  .photo-col-1 {
-    background-color: green;
-    align-self: flex-start;
-  }
+    .photo-col-1 {
+      background-image: url(../img/hoop-day-1.jpg);
+      align-self: flex-start;
+    }
 
-  .photo-col-2 {
-    background-color: blue;
-    align-self: flex-start;
-  }
+    .photo-col-2 {
+      background-image: url(../img/hoop-day-2.jpg);
+      align-self: flex-start;
+    }
 
-  .photo-col-3 {
-    background-color: orange;
-    align-items: flex-start;
-  }
+    .photo-col-3 {
+      background-image: url(../img/hoop-day-3.jpg);
+      align-items: flex-start;
+    }
 
-  .photo-col-4 {
-    background-color: grey;
-    align-self: flex-start;
-  }
+    .photo-col-4 {
+      background-image: url(../img/hoop-day-4.jpg);
+      align-self: flex-start;
+    }
 
-  .photo-col-5 {
-    background-color: yellow;
-    align-self: flex-start;
-  }
+    .photo-col-5 {
+      background-image: url(../img/eating-fire.jpg);
+      align-self: flex-start;
+    }
 
-  .photo-col-6 {
-    background-color: pink;
-  }
+    .photo-col-6 {
+      background-image: url(../img/hoop-fire-night.jpg);
+    }
 
-  .photo-col-7 {
-    background-color: purple;
-  }
+    .photo-col-7 {
+      background-image: url(../img/fire-night.jpg);
+    }
 
-  .photo-col-8 {
-    background-color: black;
-  }
+    .photo-col-8 {
+      background-image: url(../img/fire-night-p1.jpg);
+    }
 
-  .photo-col-9 {
-    background-color: red;
-  }
+    .photo-col-9 {
+      background-image: url(../img/fire-night-p2.jpg);
+    }
 
-  .photo-col-10 {
-    background-color: brown;
-  }
+    .photo-col-10 {
+      background-image: url(../img/fire-night-p3.jpg);
+    }
 
-  .photo-col-11 {
-    background-color: violet;
-  }
+    .photo-col-11 {
+      background-image: url(../img/fire-night-p-feature1.jpg);
+    }
 
-  .photo-col-12 {
-    background-color: tomato;
-  }
-
+    .photo-col-12 {
+      background-image: url(../img/fire-night-p-feature2.jpg);
+    }
 }
     /*nav a {
       text-decoration: none;
