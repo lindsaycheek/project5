@@ -13,16 +13,43 @@
       <h1>Ember Rising</h1>
       <nav class="menu">
         <ul>
-          <li><a href="about.html" class="first-anchor">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="performance.html">Performance</a></li>
+          <li><a href="clothing.html">Clothing</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main class="contact">
       <h1>Contact Me: emberflowarts@gmail.com</h1>
-      <p>Contact Ember Rising to book a customized show, for lessons, or customized clothing!</p>
-      <img src="img/fire-night-p-feature2.jpg" alt="">
+      <p>Contact Ember Rising to book a customized show, lessons, or customized clothing!</p>
+      <div class="contact-info">
+        <img src="img/fire-night-p-feature2.jpg" alt="">
+        <div class="form-container">
+  <!-- <form action="mailto:myforms@mydomain.com" enctype="text/plain"onsubmit="location.href='thanks.html';"> -->
+          <form action="/action_page.php"
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+
+            <label for="topic">Message Topic</label>
+            <select id="message-topic" name="topic">
+              <option value="Performance-Art">Performance Art</option>
+              <option value="Performance-Art">Lessons</option>
+              <option value="Sew-Heady">Sew Heady Clothing</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+          </form>
     </main>
     <footer>
         <p>Ember Rising | Email: emberflowarts@gmail.com</p>

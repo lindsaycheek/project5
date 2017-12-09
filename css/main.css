@@ -4,6 +4,7 @@
 @import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah:400);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100');
 /*** basic reset ***/
 
 /*body, h1, h2, ul, ol {
@@ -14,6 +15,59 @@
 * {
     box-sizing: border-box;
 }
+
+main {
+  flex: 1;
+}
+footer {
+  margin: 0 auto;
+  width: 50%;
+}
+footer p {
+  text-align: center;
+}
+
+div .contact-info {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/*.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}*/
+
 
 a:-webkit-any-link {
     color: white;
@@ -73,6 +127,8 @@ html {
 }
 
 header h1 {
+  display: flex;
+  flex-direction: column;
   font-family: 'Gloria Hallelujah', cursive;
   color: white;
 }
@@ -80,7 +136,6 @@ header h1 {
 nav ul {
   /*color: white;*/
   font-size: 1.2em;
-  width: 50vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -191,6 +246,7 @@ div img {
 }
 
 h1 {
+  font-family: 'Raleway', sans-serif;
   margin-top: 1em;
   text-align: center;
 }
@@ -214,6 +270,8 @@ main {
 
 #feature h1 {
   color: white;
+  /*text-shadow: 1px 1px #ff0000;*/
+  text-shadow: 1px 1px 2px #FF0000;
   text-align: left;
   font-family: 'Oswald', sans-serif;
   font-size: 6em;
@@ -380,6 +438,45 @@ main {
     .photo-col-12 {
       background-image: url(../img/fire-night-p-feature2.jpg);
     }
+  }
+
+  /* Create four equal columns that floats next to each other */
+  .column {
+      display: flex;
+      flex-direction: column;
+      float: left;
+      width: 25%;
+      padding: 10px;
+  }
+
+  .column img {
+      margin-top: 12px;
+      width: 100%;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media (max-width: 800px) {
+      .column {
+          width: 50%;
+      }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+      .row {
+        display: flex;
+        width: 100%;
+      }
+      .column {
+          width: 100%;
+     }
   }
 
 /*@media max-width(728px) {
@@ -549,179 +646,3 @@ background-size: 20px 20px;
   flex-direction: column;
   justify-content: space-between;
 }*/
-
-
-
-
-/*.moon:before,
-.gingham:before,
-.slumber:before,
-.moon:after,
-.gingham:after,
-.slumber:after {
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  pointer-events: none; }
-
-.moon,
-.gingham,
-.slumber {
-  position: relative; }
-  .moon img,
-  .gingham img,
-  .slumber img {
-    width: 100%;
-    z-index: 1; }
-  .moon:before,
-  .gingham:before,
-  .slumber:before {
-    z-index: 2; }
-  .moon:after,
-  .gingham:after,
-  .slumber:after {
-    z-index: 3; }*/
-
-/*
- * Moon
- *
- */
-/*.moon:before,
-.gingham:before,
-.slumber:before,
-.moon:after,
-.gingham:after,
-.slumber:after {
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  pointer-events: none; }
-
-.moon,
-.gingham,
-.slumber {
-  position: relative; }
-  .moon img,
-  .gingham img,
-  .slumber img {
-    width: 100%;
-    z-index: 1; }
-  .moon:before,
-  .gingham:before,
-  .slumber:before {
-    z-index: 2; }
-  .moon:after,
-  .gingham:after,
-  .slumber:after {
-    z-index: 3; }
-
-.moon {
-  -webkit-filter: grayscale(1) contrast(1.1) brightness(1.1);
-  filter: grayscale(1) contrast(1.1) brightness(1.1); }
-  .moon::before {
-    background: #a0a0a0;
-    mix-blend-mode: soft-light; }
-  .moon::after {
-    background: #383838;
-    mix-blend-mode: lighten; }*/
-
-/*
- *
- * Gingham
- *
- */
-/*.moon:before,
-.gingham:before,
-.slumber:before,
-.moon:after,
-.gingham:after,
-.slumber:after {
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  pointer-events: none; }*/
-
-/*.moon,
-.gingham,
-.slumber {
-  position: relative; }
-  .moon img,
-  .gingham img,
-  .slumber img {
-    width: 100%;
-    z-index: 1; }
-  .moon:before,
-  .gingham:before,
-  .slumber:before {
-    z-index: 2; }
-  .moon:after,
-  .gingham:after,
-  .slumber:after {
-    z-index: 3; }
-
-.gingham {
-  -webkit-filter: brightness(1.05) hue-rotate(-10deg);
-  filter: brightness(1.05) hue-rotate(-10deg); }
-  .gingham::after {
-    background: linear-gradient(to right, rgba(66, 10, 14, 0.2), transparent);
-    mix-blend-mode: darken; }*/
-
-/*
- *
- * Slumber
- *
- */
-/*.moon:before,
-.gingham:before,
-.slumber:before,
-.moon:after,
-.gingham:after,
-.slumber:after {
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  pointer-events: none; }
-
-.moon,
-.gingham,
-.slumber {
-  position: relative; }
-  .moon img,
-  .gingham img,
-  .slumber img {
-    width: 100%;
-    z-index: 1; }
-  .moon:before,
-  .gingham:before,
-  .slumber:before {
-    z-index: 2; }
-  .moon:after,
-  .gingham:after,
-  .slumber:after {
-    z-index: 3; }
-
-.slumber {
-  -webkit-filter: saturate(0.66) brightness(1.05);
-  filter: saturate(0.66) brightness(1.05); }
-  .slumber::after {
-    background: rgba(125, 105, 24, 0.5);
-    mix-blend-mode: soft-light; }
-  .slumber::before {
-    background: rgba(69, 41, 12, 0.4);
-    mix-blend-mode: lighten; }*/
